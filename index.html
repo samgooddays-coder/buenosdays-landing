@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Samuel Buendía — Join The Pursuit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0a;
+    --bg-soft:#111111;
+    --cream:#f4efe8;
+    --muted:#8f8a82;
+    --line:rgba(244,239,232,0.14);
+    --accent:#c9a45c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(201,164,92,0.08), transparent 60%),
+      radial-gradient(ellipse 1200px 800px at 50% 110%, rgba(201,164,92,0.05), transparent 60%),
+      var(--bg);
+    color:var(--cream);
+    font-family:'Inter',sans-serif;
+    font-weight:300;
+    min-height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .wrap{
+    width:100%;
+    max-width:620px;
+    padding:9vh 28px 6vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    flex:1;
+  }
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:28px;
+    font-weight:500;
+  }
+  h1{
+    font-family:'Playfair Display',serif;
+    font-weight:500;
+    font-size:clamp(34px,6vw,58px);
+    line-height:1.12;
+    letter-spacing:-0.01em;
+    margin-bottom:22px;
+  }
+  h1 em{
+    font-style:italic;
+    color:var(--accent);
+  }
+  .sub{
+    font-size:16px;
+    line-height:1.7;
+    color:var(--muted);
+    max-width:460px;
+    margin-bottom:48px;
+    font-weight:300;
+  }
+  form{
+    width:100%;
+    max-width:400px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:16px;
+  }
+  .field{
+    position:relative;
+    text-align:left;
+  }
+  label{
+    display:block;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:8px;
+  }
+  input{
+    width:100%;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid var(--line);
+    color:var(--cream);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    font-weight:400;
+    padding:10px 2px;
+    outline:none;
+    transition:border-color .25s ease;
+  }
+  input::placeholder{color:#5c584f;}
+  input:focus{border-bottom-color:var(--accent);}
+  button{
+    margin-top:14px;
+    background:var(--cream);
+    color:#0a0a0a;
+    border:none;
+    padding:16px 24px;
+    font-family:'Inter',sans-serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:background .25s ease, transform .15s ease;
+  }
+  button:hover{background:var(--accent);transform:translateY(-1px);}
+  .fineprint{
+    font-size:12px;
+    color:var(--muted);
+    letter-spacing:0.02em;
+  }
+  .divider{
+    width:1px;
+    height:56px;
+    background:linear-gradient(var(--line), transparent);
+    margin:56px auto 0;
+  }
+  footer{
+    width:100%;
+    padding:26px 28px 34px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    border-top:1px solid var(--line);
+    font-size:12px;
+    letter-spacing:0.08em;
+    color:var(--muted);
+    text-transform:uppercase;
+  }
+  footer a{color:var(--cream);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px;}
+  footer a:hover{border-bottom-color:var(--accent);color:var(--accent);}
+  .dot{opacity:.4;}
+  @media (max-width:480px){
+    .wrap{padding:11vh 22px 5vh;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">@buenosdays_ &nbsp;·&nbsp; Samuel Buendía</div>
+    <h1>Documenting the pursuit<br/>of becoming <em>who I said<br/>I'd be.</em></h1>
+    <p class="sub">Join the list to follow the process up close — the training, the mindset work, and first access when new programs and 1-on-1 spots open.</p>
+
+    <form action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL" method="POST">
+      <input type="hidden" name="_subject" value="New lead from buenosdays_ landing page" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@email.com" required />
+      </div>
+      <div class="field">
+        <label for="instagram">Instagram (optional)</label>
+        <input id="instagram" name="instagram" type="text" placeholder="@yourhandle" />
+      </div>
+      <button type="submit">Join The Pursuit</button>
+    </form>
+    <p class="fineprint">Free. No spam. Just the process, documented.</p>
+
+    <div class="divider"></div>
+  </div>
+  <footer>
+    <span>Samuel Buendía</span>
+    <span class="dot">•</span>
+    <a href="https://instagram.com/buenosdays_" target="_blank" rel="noopener">@buenosdays_</a>
+  </footer>
+</body>
+</html>
